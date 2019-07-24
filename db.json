@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    "createdAt": "2019-07-14T20:56:41.837Z",
     "title": "Railway District Manager for South East Nigeria, Olusoji Osidipe, has attributed ",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
     "url": "www.facebook.com",
@@ -9,66 +8,9 @@
   },
   {
     "id": 2,
-    "createdAt": "2019-07-14T20:56:41.837Z",
     "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
     "url": "www.facebook.com",
     "author": "District Manager"
-  },
-  {
-    "id": 3,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The District Manager of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme challenges"
-  },
-  {
-    "id": 4,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme vandalism"
-  },
-  {
-    "id": 5,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "vandalism ekong"
-  },
-  {
-    "id": 6,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme ekong"
-  },
-  {
-    "id": 7,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme ekong"
-  },
-  {
-    "id": 8,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme ekong"
-  },
-  {
-    "id": 9,
-    "createdAt": "2019-07-14T20:56:41.837Z",
-    "title": "The non-functionality of rail lines in the region to challenges caused by erosion and vandalism.",
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dimaposnyy/128.jpg",
-    "url": "www.facebook.com",
-    "author": "Udeme ekong"
-  }
+  } 
 ]
