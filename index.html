@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://kit.fontawesome.com/b7def9d79d.js"></script>
+<link rel="stylesheet" href="./stylesheets/index.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>News Today</title>
+</head>
+
+<body>
+<header class="header">
+		<a href="#" class="logo"><img src="assets/logo.png"></a>
+		<div class="search">
+			<div class="input">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="Search news articles...">
+			</div>
+			<button>Search</button>
+		</div>
+		<div class="header-right">
+			<a class="active" href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<button onclick="document.getElementById('id01').style.display='block'">Add News</button>
+		</div>
+</header>
+<div id="id01" class="w3-modal">
+	<div class="w3-modal-content">
+		<div class="w3-container">
+			<span onclick="document.getElementById('id01').style.display='none'"
+				class="w3-button w3-display-topright">&times;</span>
+			<input type="text-area">
+			<button>Create News</button>
+		</div>
+	</div>
+</div>
+<section>
+	<div class="section">
+		<div class="aside">
+			<ul>
+				<li><i class="fas fa-fire-alt"></i> Trending Stories</li>
+				<li><i class="far fa-address-card"></i> Recommended</li>
+				<li><i class="far fa-star"></i> Favorites</li>
+				<li><i class="fab fa-creative-commons-nd"></i> Related</li>
+			</ul>
+			<hr>
+			<ul>
+				<li><i class="far fa-flag"></i> Local News</li>
+				<li><i class="fas fa-globe-africa"></i> World</li>
+				<li><i class="fas fa-microchip"></i> Technology</li>
+				<li><i class="fas fa-business-time"></i> Business</li>
+				<li><i class="fas fa-volleyball-ball"></i> Sports</li>
+				<li><i class="fas fa-gavel"></i> Law</li>
+				<li><i class="fas fa-money-check-alt"></i> Economy</li>
+				<li><i class="fas fa-user-graduate"></i> Education</li>
+				<li><i class="fas fa-mug-hot"></i> Food</li>
+			</ul>
+			<hr class="hr">
+			<footer class="header-right">
+				<div class="links">
+					<a class="active" href="#">Terms</a>
+					<a href="#">Privacy</a>
+					<a href="#">More</a>
+				</div>
+					<p><b>2019 NewsUpdate.</b> All Rights Reserved</p>
+			</footer>
+		</div>
+		<article>
+		</article>
+  </div>
+	<div class="more">
+		<button id="previous">Previous</button>
+		<button id="next">Next</button>
+	</div>
+</section>
+
+<script src="./scripts/articles.js"></script>
+</body>
+
+</html>

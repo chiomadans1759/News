@@ -1,0 +1,201 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #f8f9fa;
+}
+
+button {
+	background-color: #3e77cc;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.header {
+	padding:10px 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 2px 5px 6px 0px #888888;
+	position: sticky;
+	background: #f8f9fa;
+	top:0px;
+}
+
+.header-right a{
+	text-decoration: none;
+	margin-right: 12px;
+	color: #565656;
+}
+
+.header-right a:hover,
+.header-right a:focus {
+	color: #3e77cc;
+}
+
+.logo img {
+	height: 60px;
+}
+
+.section {
+	padding:3rem 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+article {
+	width: 70%;
+	background: #fff; 
+}
+
+.article-wrap img {
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.article .metrics {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.article .metrics a {
+	color: #3e77cc;
+	cursor: pointer;
+}
+
+.article {
+	padding: 1rem;
+	box-shadow: 2px 5px 6px 0px #888888;
+}
+
+.article a {
+	color: rgb(35, 120, 216);
+}
+
+.comments > p {
+	margin: 0;
+	color: #aaa7a7;
+	margin-top: 40px;
+}
+
+hr {
+	margin-top: 5px;
+	border: 0.5px solid #ccc;
+}
+
+.add-comment {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+.comments img {
+	height: 30px;
+	width: 30px;
+	margin: 0 10px 0 0;
+	border-radius: 50%;
+	object-fit: center;
+}
+
+.add-comment .input {
+	height: 30px;
+	width: calc(100% - 30px);
+}
+
+.add-comment input {
+	height: 30px;
+	width: calc(100% - 130px);
+	outline: none;
+}
+
+.add-comment button {
+	height: 34px;
+	width: 120px;
+	border-radius: 0;
+	font-size: 12px;
+}
+.commented {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+.commented i {
+	color: #aaa7a7;
+}
+
+.commented p {
+	margin: 0px;
+}
+
+.commented b {
+	margin-left: calc(100% - 90px)
+}
+
+.commented b .edit {
+	color: green;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.commented b .delete{
+	color: red;margin: auto 16px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+footer {
+	text-align: center;
+	margin: 24px auto;
+}
+
+aside {
+	margin-left: 50px;
+	width: 30%;
+	color: #252525;
+}
+
+aside > div {
+	background-color: #fff;
+}
+
+aside .heading {
+	padding: 10px;
+	background-color: #e7e6e6;
+}
+
+aside .related {
+	padding: 10px;
+	margin-top: 40px;
+	background-color: #000;
+	color: #fff;
+}
+
+aside ul li {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: 0.1px solid rgb(230, 227, 227);
+}
+
+aside ul li:hover {
+	border-left: 5px solid rgb(233, 58, 58);
+	color: rgb(35, 120, 216);
+}
+
+aside ul li p {
+	text-align: right;
+	font-size: 10px;
+	color: red;
+	margin-top: 5px;
+}
+
