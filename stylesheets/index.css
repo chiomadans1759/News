@@ -32,17 +32,6 @@ button {
 	top:0px;
 }
 
-.header-right a{
-	text-decoration: none;
-	margin-right: 12px;
-	color: #565656;
-}
-
-.header-right a:hover,
-.header-right a:focus {
-	color: #3e77cc;
-}
-
 .links {
 	margin-bottom: 8px;
 }
@@ -69,18 +58,19 @@ button {
 .search .input {
 	background-color: #ececf3;
 	width: 85%;
-	height: 50px;
 	border-radius: 10px 0 0 10px;
 }
 
 .fa-search {
 	color: #b7b7b7;
 	padding: 0 10px;
+	width: auto;
 }
 
 .search input {
 	background-color: #ececf3;
 	height: 50px;
+	width: 70%;
 	border: none;
 	outline: none;
 	border-radius: 10px 0 0 10px;
@@ -98,40 +88,11 @@ button {
 .section {
 	padding:3rem 10%;
 	display: flex;
-	justify-content: space-between;
-}
-
-.aside {
-	position: fixed;
-}
-
-ul {
-	padding: 0;
-}
-
-ul li {
-	list-style-type: none;
-	margin-bottom: 1rem;
-}
-
-hr {
-	margin: 2rem 10px 2rem 0;
-	border: 0.5px solid #ccc;
-}
-
-.hr {
-	margin-bottom: 5px;
-}
-
-i {
-	width: 40px;
-	color: #b7b7b7;
+	justify-content: center;
 }
 
 article {
 	width: 75%;
-	float: right;
-	margin-left: 25%;
 }
 
 .article-wrap {
@@ -186,6 +147,15 @@ h3 {
 	-webkit-box-orient: vertical;
 }
 
+.article-title {
+	cursor: pointer;
+  -webkit-line-clamp: 1;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
 .time {
 	display: flex;
 	align-items: center;
@@ -214,5 +184,17 @@ h3 {
 
 .more span{
 	margin: auto 10px;
+}
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.container label,
+.container button { 
+	margin-top: 2rem;
 }
 

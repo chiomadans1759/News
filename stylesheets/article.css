@@ -106,9 +106,9 @@ hr {
 	object-fit: center;
 }
 
-.add-comment .input {
-	height: 30px;
-	width: calc(100% - 30px);
+.add-comment #input {
+	width: calc(100% - 40px);
+	outline: none;
 }
 
 .add-comment input {
@@ -132,14 +132,20 @@ hr {
 
 .commented i {
 	color: #aaa7a7;
+	display: block;
 }
 
 .commented p {
 	margin: 0px;
+	width: calc(100% - 40px)
 }
 
 .commented b {
 	margin-left: calc(100% - 90px)
+}
+
+.commented .comment-body {
+	display: block;
 }
 
 .commented b .edit {

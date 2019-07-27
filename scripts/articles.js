@@ -31,7 +31,7 @@ function getArticles(page = 1, limit = 10) {
       if (articles.length > 0) {
         isOnLastPage = false;
         articlesContainer.innerHTML = "";
-        articles.forEach(article => {
+        articles.reverse().forEach(article => {
           const newArticleCard = createArticleCard(article);
           articlesContainer.appendChild(newArticleCard);
         });
@@ -80,4 +80,46 @@ function createArticleCard(articleDetails) {
   time.textContent = articleDetails.createdAt;
 
   return articleWrap;
+}
+
+document
+  .querySelector("#create-news-button")
+  .addEventListener("click", postNews);
+function postNews() {
+  let title = document.querySelector("#new-title").value;
+  let url = document.querySelector("textarea").value;
+  let avatar = document.querySelector("#new-image").value;
+
+  fetch("http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news", {
+    method: "POST",
+    body: JSON.stringify({
+      title
+    })
+  })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+}
+
+let eachNews = document.querySelector("#search-news");
+eachNews.addEventListener("keyup", searchNews);
+
+function searchNews() {
+  let news = document.querySelectorAll(".article-wrap");
+  let searchResult = document.querySelectorAll(".article-title");
+  let searchVal = eachNews.value.toLowerCase();
+  
+  if(searchVal){
+    for (let i = 0; i < news.length; i++) {
+      if (searchResult[i].textContent.toLowerCase().indexOf(searchVal) > -1) {
+        news[i].style["display"] = "flex";
+      } else {
+        news[i].style["display"] = "none";
+      }
+    }
+  }else{
+    news.forEach(n => {
+      n.style['display'] = 'flex'
+    })
+  }
 }
