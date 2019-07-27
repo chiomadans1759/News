@@ -32,8 +32,3 @@ A simple news app to test my understanding of vanilla JavaScript
 ## Author
 
 - Oluchukwu Chioma Okpala
- 
-## Acknowledgement
-
-- @Transact
-
