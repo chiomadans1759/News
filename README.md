@@ -19,13 +19,13 @@ A simple news app to test my understanding of vanilla JavaScript
 ## Features
 
  ### Required Features
-- Get paginated news [GET][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news?page=1&limit=10].
-- Add news item [POST][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news].
-- Update news item [PUT][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id].
-- Get comments on a news[GET][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/news/:id/comments].
-- Add Comment to news [POST][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments].
-- Edit comment on a news[PUT][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments/:id].
-- Delete comment on news item[DELETE] [http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments/:id].
+- Get paginated news [`GET`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news?page=1&limit=10].
+- Add news item [`POST`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news].
+- Update news item [`PUT`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id].
+- Get comments on a news[`GET`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/news/:id/comments].
+- Add Comment to news [`POST`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments].
+- Edit comment on a news[`PUT`][http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments/:id].
+- Delete comment on news item[`DELETE`] [http(s)://5bee92827839000013e6faed.mockapi.io/clane/api/v2/news/:id/comments/:id].
 - Paginate posts
 - Implement Search
 
