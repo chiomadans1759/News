@@ -1,7 +1,7 @@
 # News App
 ## General Overview
 A simple news app to test my understanding of vanilla JavaScript
-`http://news-interview-app.herokuapp.com`
+http://news-interview-app.herokuapp.com
  
 ## Getting Started
 
