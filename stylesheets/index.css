@@ -105,7 +105,9 @@ article {
 	margin-bottom: 24px;
 }
 
-.article-wrap:hover .delete-news {
+.article-wrap:hover .delete-news,
+.article-wrap:focus .delete-news,
+.article-wrap:active .delete-news {
 	color: red;
 }
 
@@ -206,13 +208,15 @@ h3 {
 }
 
 .container .buttons {
-	text-align: end;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 2rem;
 }
 
 .container label,
-.container button { 
-	margin-top: 2rem;
+.container button {
 	width: 120px;
+	margin-left: 10px;
 	display: inline-block;
 }
 
@@ -257,4 +261,3 @@ article {
 	font-size: 10px;
 }
 }
-
