@@ -112,6 +112,25 @@ function postNews() {
     .catch(err => console.log(err));
 }
 
+document.querySelector("#update-news-button").addEventListener("click", updateNews);
+function updateNews(e) {
+  let title = document.querySelector("#new-title").value;
+  let url = document.querySelector("textarea").value;
+  let avatar = document.querySelector("#new-image").value;
+  let newsId = e.srcElement.id;
+  fetch(`http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news/${newsId}`, {
+    method: "UPDATE",
+    body: JSON.stringify({
+      title,
+      url,
+      avatar
+    })
+  })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+}
+
 function deleteNews(e) {
   let newsId = e.srcElement.id;
   fetch(`http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news/${newsId}`,

@@ -205,9 +205,15 @@ h3 {
 	padding: 2rem;
 }
 
+.container .buttons {
+	text-align: end;
+}
+
 .container label,
 .container button { 
 	margin-top: 2rem;
+	width: 120px;
+	display: inline-block;
 }
 
 @media only screen and (max-width: 922px) {
