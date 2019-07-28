@@ -47,25 +47,33 @@ function createArticleCard(articleDetails) {
   const image = document.createElement("IMG");
   const title = document.createElement("H3");
   const body = document.createElement("P");
+  const url = document.createElement("A");
   const metrics = document.createElement("DIV");
   const timeWrap = document.createElement("DIV");
   const readMore = document.createElement("A");
+  const Delete = document.createElement("BUTTON");
   const avartar = document.createElement("IMG");
   const time = document.createElement("SPAN");
+  Delete.addEventListener("click", deleteNews);
+  Delete.setAttribute("id", articleDetails.id);
 
   articleWrap.classList.add("article-wrap");
   article.classList.add("article");
   title.classList.add("article-title");
   body.classList.add("article-body");
+  url.classList.add("article-url");
   metrics.classList.add("metrics");
   timeWrap.classList.add("time");
+  Delete.classList.add("delete-news");
 
   articleWrap.appendChild(article);
   articleWrap.appendChild(image);
   article.appendChild(title);
   article.appendChild(body);
+  article.appendChild(url);
   article.appendChild(metrics);
   metrics.appendChild(timeWrap);
+  metrics.appendChild(Delete);
   metrics.appendChild(readMore);
   timeWrap.appendChild(avartar);
   timeWrap.appendChild(time);
@@ -73,18 +81,19 @@ function createArticleCard(articleDetails) {
   title.textContent = articleDetails.title;
   body.textContent =
     "Those who hail from the seven states with two nominees each are: Osagie Ehanir who hail from the seven states with two nominees each are: Osagie Ehanir Those who hail from the seven states with two nominees each are: Osagie Ehanir";
+  url.textContent = articleDetails.url;
   image.setAttribute("src", articleDetails.avatar);
   readMore.textContent = "Read More";
+  url.setAttribute("href", articleDetails.url);
   readMore.setAttribute("href", "article.html?id=" + articleDetails.id);
+  Delete.textContent = "Delete News";
   avartar.setAttribute("src", articleDetails.avatar);
   time.textContent = articleDetails.createdAt;
 
   return articleWrap;
 }
 
-document
-  .querySelector("#create-news-button")
-  .addEventListener("click", postNews);
+document.querySelector("#create-news-button").addEventListener("click", postNews);
 function postNews() {
   let title = document.querySelector("#new-title").value;
   let url = document.querySelector("textarea").value;
@@ -93,10 +102,23 @@ function postNews() {
   fetch("http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news", {
     method: "POST",
     body: JSON.stringify({
-      title
+      title,
+      url,
+      avatar
     })
   })
     .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+}
+
+function deleteNews(e) {
+  let newsId = e.srcElement.id;
+  fetch(`http://5d2c2f2b8c90070014972225.mockapi.io/api/v2/news/${newsId}`,
+    {
+      method: "DELETE"
+    }
+  )
     .then(data => console.log(data))
     .catch(err => console.log(err));
 }

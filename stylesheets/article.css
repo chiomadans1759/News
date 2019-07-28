@@ -28,17 +28,6 @@ button {
 	top:0px;
 }
 
-.header-right a{
-	text-decoration: none;
-	margin-right: 12px;
-	color: #565656;
-}
-
-.header-right a:hover,
-.header-right a:focus {
-	color: #3e77cc;
-}
-
 .logo img {
 	height: 60px;
 }
@@ -146,6 +135,8 @@ hr {
 
 .commented .comment-body {
 	display: block;
+	border: none;
+	padding: 5px;
 }
 
 .commented b .edit {
@@ -203,5 +194,19 @@ aside ul li p {
 	font-size: 10px;
 	color: red;
 	margin-top: 5px;
+}
+@media only screen and (max-width: 922px) {
+	aside {
+	 display: none;
+	}
+	.section {
+		justify-content: center;
+	}
+	article {
+		width: 90%;
+	}
+	.article-wrap #banner {
+		height: 200px;
+	}
 }
 
