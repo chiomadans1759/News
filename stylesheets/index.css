@@ -105,6 +105,16 @@ article {
 	margin-bottom: 24px;
 }
 
+.article-wrap:hover .delete-news {
+	color: red;
+}
+
+.article .delete-news {
+	padding: 5px 10px;
+	font-size: 12px;
+	background-color: inherit;
+}
+
 .article-wrap img {
 	height: calc(100% - 8px);
 	width: 25%;
@@ -137,14 +147,16 @@ h3 {
 }
 
 .article p {
-	margin: 1rem 0;
-	margin-bottom: 20px;
 	cursor: pointer;
   -webkit-line-clamp: 2;
   overflow : hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
 	-webkit-box-orient: vertical;
+}
+
+.article .article-url {
+	color: #3e77cc;
 }
 
 .article-title {
@@ -193,8 +205,56 @@ h3 {
 	padding: 2rem;
 }
 
+.container .buttons {
+	text-align: end;
+}
+
 .container label,
 .container button { 
 	margin-top: 2rem;
+	width: 120px;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 922px) {
+
+article {
+	width: 100%;
+}
+.article .metrics a {
+	font-size: 12px;
+} 
+.article p {
+	margin: 0;
+} 
+.time span {
+	font-size: 9px;
+}
+.more {
+	margin-top: 0rem;
+	margin-bottom: 2rem;
+}
+.logo img {
+	height: 40px;
+}
+.search {
+	height: 40px;
+	width: 60%;
+}
+.search .input { 
+	width: 85%; 
+}
+.search input {
+	height: 40px;
+}
+
+.search button {
+	width: 20%;
+	height: 40px;
+	font-size: 10px;
+}
+.header-right { 
+	font-size: 10px;
+}
 }
 
