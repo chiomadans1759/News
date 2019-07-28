@@ -1,6 +1,5 @@
 const newsId = window.location.search.split("=")[1];
 
-
 function getArticlesByID() {
 	let request = new XMLHttpRequest();
   request.open(
@@ -24,7 +23,6 @@ function getArticlesByID() {
   request.send();
 }
 getArticlesByID();
-getComments();
 
 document.querySelector("#add-comment").addEventListener("click", postComment);
 function postComment() {
@@ -67,6 +65,7 @@ function getComments() {
   };
   request.send();
 }
+getComments();
 
 function createCommentsCard(commentDetails) {
   const commentWrap = document.createElement("DIV");
