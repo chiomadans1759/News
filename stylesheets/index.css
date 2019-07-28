@@ -115,6 +115,7 @@ article {
 	padding: 5px 10px;
 	font-size: 12px;
 	background-color: inherit;
+	color: red;
 }
 
 .article-wrap img {
@@ -261,4 +262,3 @@ article {
 	font-size: 10px;
 }
 }
-
